@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/10.0.2-internal">
+   <AnchorPane prefHeight="1500.0" prefWidth="600.0">
+      <Label layoutX="14.0" layoutY="215.0" prefHeight="256.0" prefWidth="542.0"
+             text="Dots and Boxes is a pencil-and-paper game for two&#10;players (sometimes more). It was first published in the&#10;19th century by French mathematician Édouard Lucas,&#10;who called it la pipopipette.It has gone by many&#10;other names, including the game of dots, dot to&#10;dot grid, boxes, and pigs in a pen.&#10;&#10;&#10;">
+         <font>
+            <Font size="22.0"/>
+         </font>
+      </Label>
+      <ImageView fitHeight="184.0" fitWidth="234.0" layoutX="21.0" layoutY="497.0" pickOnBounds="true"
+                 preserveRatio="true">
+         <Image url="@image1.png"/>
+      </ImageView>
+      <ImageView fitHeight="188.0" fitWidth="262.0" layoutX="263.0" layoutY="497.0" pickOnBounds="true"
+                 preserveRatio="true">
+         <Image url="@image2.png"/>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="693.0"
+             text="The game starts with an empty grid of dots. Usually two&#10;players take turns adding a single horizontal or vertical&#10;line between two unjoined adjacent dots. A player who&#10;completes the fourth side of a 1×1 box earns one point&#10;and takes another turn. (A point is typically recorded by&#10;placing a mark that identifies the player in the box, such&#10;as an initial.) The game ends when no more lines can be&#10;placed. The winner is the player with the most&#10;points. The board may be of any size grid. When&#10;short on time, or to learn the game, a 2×2 board (3×3&#10;dots) is suitable. A 5×5 board, on the other hand, is&#10;good for experts.">
+         <font>
+            <Font size="22.0"/>
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="1105.0"
+             text="Rule for this Gamer&#10;&#10;1) This Game consist of 260 dots which is (14X20) and maximum two player can play it.&#10;&#10;2)When a player makes a line his/her move is increase by 1&#10;&#10;3)The Player who makes the box first gets 1 point&#10;&#10;4)The player who make the box first gets a extra move.(his/her move is not counted)&#10;&#10;5) The maximum score a player can get in this game is 247 if the other player has a score of zero&#10;&#10;Winning criteria&#10;&#10;1)If both the player has same points then the winner is decided on the basis of No, moves&#10;">
+         <font>
+            <Font size="22.0"/>
+         </font>
+      </Label>
+      <ImageView fitHeight="201.0" fitWidth="234.0" layoutX="509.0" layoutY="14.0" pickOnBounds="true"
+                 preserveRatio="true" AnchorPane.rightAnchor="228.0">
+         <Image url="@icon.png"/>
+      </ImageView>
+   </AnchorPane>
+</ScrollPane>

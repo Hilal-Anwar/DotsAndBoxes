@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <MenuBar>
+      <Menu mnemonicParsing="false" text="Options">
+         <MenuItem mnemonicParsing="false" onAction="#Option" text="New Game" />
+         <MenuItem mnemonicParsing="false" onAction="#Option" text="Quit" />
+      </Menu>
+      <Menu mnemonicParsing="false" text="Help">
+         <MenuItem mnemonicParsing="false" onAction="#Option" text="About" />
+         <MenuItem mnemonicParsing="false" onAction="#Option" text="Instructions" />
+      </Menu>
+   </MenuBar>
+   <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="713.0" prefWidth="1369.0">
+      <AnchorPane fx:id="GameView" onMouseClicked="#onMouseClicked" prefHeight="500.0" prefWidth="920.0">
+         <ImageView fx:id="backImg" fitHeight="713.0" fitWidth="1121.0" opacity="0.58" pickOnBounds="true">
+            <Image url="@Lost_in_a_Field2.jpg" />
+         </ImageView>
+      </AnchorPane>
+      <AnchorPane fx:id="user_1" layoutX="1123.0" layoutY="1.0" prefHeight="337.0" prefWidth="244.0" style="-fx-background-color: #810541;">
+         <Circle fx:id="face_1" fill="WHITE" layoutX="122.0" layoutY="70.0" onMouseClicked="#resetUser_1" radius="60.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" />
+         <Label id="player_1Name" fx:id="player_1Name" alignment="CENTER" layoutX="5.0" layoutY="139.0" prefHeight="43.0" prefWidth="236.0" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="29.0" />
+            </font>
+         </Label>
+         <Label alignment="CENTER" layoutX="14.0" layoutY="205.0" text="Points :" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="23.0" />
+            </font>
+         </Label>
+         <Label alignment="CENTER" layoutX="14.0" layoutY="239.0" text="Moves :" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="23.0" />
+            </font>
+         </Label>
+         <Label fx:id="pointsOfPlayer_1" layoutX="107.0" layoutY="208.0" text="0" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="24.0" />
+            </font>
+         </Label>
+         <Label fx:id="movesOfPlayer_1" layoutX="109.0" layoutY="240.0" text="0" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="24.0" />
+            </font>
+         </Label>
+         <ColorPicker fx:id="pick_1" layoutX="107.0" layoutY="275.0" onAction="#colorPicker_1" style="-fx-background-color: white; -fx-background-radius: 20;" />
+         <Label alignment="CENTER" layoutX="14.0" layoutY="271.0" text="Color   :" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="23.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+      <AnchorPane fx:id="user_2" layoutX="1123.0" layoutY="339.0" prefHeight="365.0" prefWidth="244.0" style="-fx-background-color: #806517;">
+         <Circle fx:id="face_2" fill="WHITE" layoutX="122.0" layoutY="66.0" onMouseClicked="#resetUser_2" radius="60.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" />
+         <Label id="player_2Name" fx:id="player_2Name" alignment="CENTER" layoutX="5.0" layoutY="140.0" prefHeight="43.0" prefWidth="236.0" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="29.0" />
+            </font>
+         </Label>
+         <Label alignment="CENTER" layoutX="16.0" layoutY="203.0" text="Points :" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="23.0" />
+            </font>
+         </Label>
+         <Label alignment="CENTER" layoutX="14.0" layoutY="231.0" text="Moves :" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="23.0" />
+            </font>
+         </Label>
+         <Label fx:id="pointsOfPlayer_2" layoutX="109.0" layoutY="204.0" text="0" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="24.0" />
+            </font>
+         </Label>
+         <Label fx:id="movesOfPlayer_2" layoutX="109.0" layoutY="232.0" prefHeight="34.0" text="0" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="24.0" />
+            </font>
+         </Label>
+         <ColorPicker fx:id="pick_2" layoutX="110.0" layoutY="271.0" onAction="#colorPicker_2" style="-fx-background-color: white; -fx-background-radius: 20;" />
+         <Label alignment="CENTER" layoutX="14.0" layoutY="267.0" text="Color   :" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="23.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+   </AnchorPane>
+</VBox>

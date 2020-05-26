@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+>
+   <TextArea editable="false" layoutX="14.0" layoutY="85.0" prefHeight="305.0" prefWidth="575.0"
+             text="Product Version&#10;Dotes and Boxes&#10; &#10;Author&#10;Helal Anwar&#10;Email :  hilal123anwar@gmail.com&#10;&#10;&#10;Build Information&#10;Version 1.0.0&#10;Date: 2020-05-25&#10;Java Version: java version &quot;14&quot; 2020-03-17&#10;Java(TM) SE Runtime Environment (build 14+36-1461)&#10;Java HotSpot(TM) 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)&#10;&#10;Java&#10;java version &quot;14&quot; 2020-03-17, Oracle Corporation&#10;&#10;Operating System&#10;Windows 10, amd64, 10.0&#10;&#10;Copyright (c) 2020-21,GPL&#10;"
+             AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="11.0"
+             AnchorPane.topAnchor="85.0">
+      <font>
+         <Font name="20th Century Font Bold" size="18.0"/>
+      </font>
+   </TextArea>
+   <ImageView fitHeight="69.0" fitWidth="74.0" layoutX="152.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@icon.png"/>
+   </ImageView>
+   <Label layoutX="228.0" layoutY="-5.0" text="About" textFill="#ed7e00e0">
+      <font>
+         <Font name="20th Century Font" size="84.0"/>
+      </font>
+   </Label>
+</AnchorPane>
