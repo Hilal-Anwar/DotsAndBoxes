@@ -32,7 +32,7 @@ import java.util.stream.IntStream;
 
 public class Controller implements Initializable {
     static String winPlayerName = "";
-     int points_1 = 0, points_2 = 0;
+    static int points_1 = 0, points_2 = 0;
     static Color color, color1 = Color.valueOf("#810541"), color2 = Color.valueOf(
             "#806517");
     static HashSet<String> Memory = new HashSet<>();
@@ -87,6 +87,7 @@ public class Controller implements Initializable {
         if (!Setting.backgroundImage.equals(""))
             backImg.setImage(Setting.image);
         backImg.setOpacity(Setting.value);
+        points_1=0;points_2=0;
     }
 
     @FXML

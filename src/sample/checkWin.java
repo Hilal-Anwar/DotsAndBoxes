@@ -23,7 +23,7 @@ public class checkWin extends Controller {
                 Won.setStyle("-fx-font: normal bold 35px '20th Century Font'");
                 Won.setFill(Setting.textColor);
                 Won.setY(((Point[a].getCenterY()+Point[b].getCenterY())/2)+10);
-                Won.setX(Point[a].getCenterX() + 20);
+                Won.setX(Point[a].getCenterX() + 18);
                 System.out.println("1");
                 if (color.equals(color1)) {
                     Value_1 = 1;
@@ -49,7 +49,7 @@ public class checkWin extends Controller {
                 Won.setFill(Setting.textColor);
                 Won.setY(((Point[a].getCenterY()+Point[b].getCenterY())/2)+10);
                 System.out.println("2");
-                Won.setX(Point[a].getCenterX() - 35);
+                Won.setX(Point[a].getCenterX() - 38);
                 if (((color.equals(color1) || Value_1 == 1)) && Value_2 == 0){
                     Won.setText(ch_2);
                     applyWinPlayer_2();
